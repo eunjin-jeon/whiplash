@@ -1,0 +1,337 @@
+/* style sheet */
+
+#container {
+  width: 80vw;
+  height: auto;
+  /* border: 1px solid olivedrab; */
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #141414;  
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  /* border: 1px solid red; */
+  background-color: #252525;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  width: 5vw;
+  height: 8vh;
+  font-size: 2em;
+  font-weight: bold;
+  /* line-height: 70px; */
+  margin-left: 10vw;
+  background-color: #252525;
+  margin-top: 2vh
+  }
+
+.gnb {
+  width: 30vw;
+  height: 5vh;
+  margin-right: 10vw;
+  /* border: 1px solid wheat; */
+}
+
+li{
+  display: flex;
+  /* align-items: center; */
+  font-size: 1.5em;
+  line-height: 3em;
+}
+
+.gnb li {
+  margin-top: -2vh;
+}
+
+.gnb img {
+  width: 1.8vw;
+  padding-top: 2.5vh;
+}
+
+main {
+  height: 100vh;
+  /* border: 1px solid white; */
+  overflow: hidden;
+}
+
+header #ham {
+  width: 2vw;
+  height: 5vh;
+  /* border: 1px solid red; */
+  margin-top: 3vh;
+}
+
+#ham1, #ham2, #ham3 {
+  width: 1.5vw;
+  height: 0.4vh;
+  background-color: #fff;
+  margin-top: 0.8vh;
+  border-radius: 2vw;
+}
+
+main div {
+  width: 100%;
+  height: 100%;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .img {
+  background-image: url(img/whiplash.jpg);
+}
+
+main #content span {
+  color: #E4BE00;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+main #content span:first-child {
+  font-size: 6em;
+}
+
+main #content span:last-child {
+  font-size: 4em;
+}
+
+section {
+  height: 100vh;
+  /* border: 0.1px solid red;  */
+  /* flex-wrap: wrap; */
+}
+
+section .box1 {
+  padding-top: 3vh;
+}
+
+section .box1 h1 {
+  /* font-size: 1em; */
+  /* font-family: 'Poppins', sans-serif; */
+  font-weight: bold;
+}
+
+section .box2 {
+  padding-top: 5vh;
+}
+
+section .box2 h3 {
+  font-size: 1.5em;
+}
+
+section .box2 .movie-name img {
+  width: 3vw;
+  height: 6vh;
+}
+
+/****************** lpcover section ************************/
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item {
+  /* height: 50vh; */
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 12vw;
+  z-index: 0;
+}
+
+.gallery-item-1 {
+  left: 15%;
+  opacity: .2;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+  height: 50%;
+  opacity: .4;
+  width: 200px;
+  z-index: 1;
+}
+
+.gallery-item-2 {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+  /* box-shadow: 2vh #ccc; */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.4), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  background-color: transparent;
+
+/* 중앙에 배치되는 lp판에 drop shadow와 같은 강조 효과를 넣고 싶은데 lp판 모양대로 (곡선) 그림자를 줄 수 있는 방법이 
+있을까요? */
+
+  width: 100%;
+  height: 75%;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.gallery-item-4 {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+  left: 85%;
+  opacity: .3;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  margin-top: -25vh;
+  justify-content: space-between;
+}
+
+/************* category soundtrack section ************/
+
+/* .con1, .con2 {
+  margin-left: 3vw;
+} */
+
+.con1 h1 {
+  margin-left: -2vw;
+}
+
+.con1 ul {
+  padding-top: 5vh;
+}
+
+.con1 ul li:nth-child(1) {
+  transform: rotate(90deg) scale(0.5);
+}
+
+.con1 ul li:nth-child(2) {
+  transform: scale(0.7);
+  opacity: 0.4;
+}
+
+.con1 ul li:nth-child(3) {
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+
+.con1 ul li:nth-child(4) {
+  transform: scale(1.8);
+}
+
+.con1 ul li:nth-child(5) {
+  transform: scale(0.8);
+  opacity: 0.6;
+}
+
+.con1 ul li:nth-child(6) {
+  transform: scale(0.7);
+  opacity: 0.4;
+}
+
+.con1 ul li:nth-child(7) {
+  transform: scale(0.6);
+  opacity: 0.2;
+}
+
+.con1 ul li:nth-child(8) {
+  transform: rotate(90deg) scale(0.5);
+}
+
+
+.con2 span {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30vh;
+  /* margin-right: -5vw; */
+  z-index: 1;
+  font-size: 7em;
+  font-weight: bold;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con2 p {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -18vh;
+  z-index: 1;
+  font-size: 1em;
+  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/********************* footer ************************/
+
+footer {
+  width: 80vw;
+  margin-left: 10vw;
+  margin-top: 5vh;
+  height: 25vh;
+  opacity: 0.5;
+  font-family: 'Poppins', sans-serif;
+  /* border: 1px solid pink; */
+}
+
+footer ul li {
+  font-size: 1em;
+}
+
+
+footer .info-box {
+  width: 28vw;
+}
+
+footer .icon-box {
+  width: 10vw;
+  height: 5vh;
+  margin-top: 2vh;
+  /* border: 1px solid blue; */
+}
+
+footer .icon-box img {
+  width: 1.5vw;
+  height: 3vh;
+}
+
+/* footer .icon-box img:last-child {
+  width: 2vw;
+  height: 4vh;
+} */
+
+footer #copyright {
+  width: 32vw;
+  margin-top: 6vh;
+}
+
+footer #copyright #logo-img {
+  font-size: 2em;
+  font-weight: bold;
+}
+
